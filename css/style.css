@@ -229,8 +229,6 @@ footer p {
     margin-right: 10px;
 }
 
-
-
 .footer-2 {
     text-align: right;
 }
@@ -462,20 +460,10 @@ footer p {
         margin-bottom: 10px;
     }
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 360px) {
+    .aside-text h3 {
+        font-size: 28px;
+    }
 }
