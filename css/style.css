@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Alata', sans-serif;
+}
+
+.mobile,
+.open-nav,
+.mobile-btn {
+    display: none;
+}
+
+a {
+    padding-bottom: 4px;
+}
+
+ a:hover {
+    border-bottom: 1px #fff solid;
+ }
+
+h3, .header-content p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h3 {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+header {
+    background-image: url(../images/desktop/image-hero.jpg);
+    padding: 60px 160px;
+    /* height: 100vh; */
+    color: #fff;
+    background-repeat: no-repeat;
+}
+
+header span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 0;
+}
+
+
+.nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+}
+
+
+.header-content {
+    max-width: 600px;
+    margin-top: 185px;
+}
+
+.header-content p {
+    padding: 30px;
+    font-size: 4em;
+    border: 1px solid;
+    text-transform: uppercase;
+}
+
+.content {
+    padding: 60px 160px;
+}
+
+aside {
+    position: relative;
+} 
+
+.aside-text {
+   /* max-width: 600px; */
+   padding: 20px 100px; 
+   position: absolute;
+   bottom: -34px;
+   left: 39%;
+   z-index: 100;
+   background: #fff;
+   color: hsl(0, 0%, 41%);
+}
+
+.aside-text h3 {
+    margin-top: 14px;
+}
+
+.aside-img {
+    max-width: 558.81px;
+}
+
+.aside-img img {
+    width: 100%;
+}
+
+.aside-text p {
+    color: hsl(0, 0%, 41%);
+}
+
+.main-head {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.main-head h3 {
+    color: hsl(0, 0%, 41%);
+}
+
+.see-all-btn {
+    padding: 10px 18px;
+    letter-spacing: 7.3px;
+    text-transform: uppercase;
+    align-self: center;
+    background-color: #fff;
+    border: 1px solid hsl(0, 0%, 41%);
+    transition-duration: .4s;
+}
+
+.see-all-btn:hover {
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(450px, auto);
+    grid-gap: 25px;
+}
+
+.gallery div {
+    position: relative;
+    transition: transform 400ms ease-out;
+    transform-origin: top left;
+}
+
+.gallery div:hover {
+    transform: scale(1.035);
+}
+
+
+.gallery div p {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 73%;
+    left: 16%;
+    max-width: 180px;
+    letter-spacing: 3.9px;
+    font-size: 1.7em;
+}
+
+.deep-earth {
+    background: url(../images/desktop/image-deep-earth.jpg) no-repeat;
+
+}
+
+.night-arcade {
+    background: url(../images/desktop/image-night-arcade.jpg) no-repeat;
+}
+
+.soccer-team {
+    background: url(../images/desktop/image-soccer-team.jpg) no-repeat;
+}
+
+.grid {
+    background: url(../images/desktop/image-grid.jpg) no-repeat;
+}
+
+.from-above {
+    background: url(../images/desktop/image-from-above.jpg) no-repeat;
+}
+
+.pocket-borealis {
+    background: url(../images/desktop/image-pocket-borealis.jpg) no-repeat;
+}
+
+.curiosity {
+    background: url(../images/desktop/image-curiosity.jpg) no-repeat;
+}
+
+.fisheye {
+    background: url(../images/desktop/image-fisheye.jpg) no-repeat;
+}
+
+footer {
+    background-color: #000;
+    padding: 30px 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer span {
+    align-self: center;
+}
+
+.footer-logo {
+    color: #fff;
+}
+
+.footer-nav {
+    padding: 0;
+}
+
+footer p {
+   color: hsl(0, 0%, 55%);
+}
+
+.socials img {
+    margin-right: 10px;
+}
+
+
+
+.footer-2 {
+    text-align: right;
+}
+
+
+
+
+
+@media  (max-width: 1252px) {
+    h3 {
+        font-size: 2em;
+    }
+}
+
+
+@media (min-width:700px) and (max-width:1024px) {
+    header,
+    .content {
+        padding: 60px 100px;
+    }
+
+    footer {
+        padding: 30px 100px;
+    }
+    
+    .gallery div p {
+        font-size: 1.5em;
+    }
+
+}
+
+@media (min-width:700px) and (max-width: 860px) {
+    header, .content {
+        padding: 60px;
+    }
+
+    .header-content {
+        max-width: 450px;
+    }
+
+    .header-content p {
+        font-size: 3em;
+    }
+
+    .aside-img {
+        max-width: none;
+    }
+
+    .aside-text {
+        position: relative;
+        padding: 20px 60px;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        padding: 30px 60px;
+    }
+
+}
+
+@media (max-width: 700px){
+    
+    header, 
+    .content,
+    footer{
+        padding: 35px;
+    }
+    
+   
+
+    header {
+        background-image: url(../images/mobile/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .nav {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+    
+    .mobile {
+        flex-direction: column;
+        justify-content: space-between;
+        background: #000;
+        color: #fff;
+    }
+
+    .mobile div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-nav {
+        display: none;
+        flex-direction: column;
+        margin-top: 45px;
+        padding-left: 0;
+    }
+
+    .mobile-nav li {
+        margin-bottom: 12px;
+    }
+    
+    .open-nav {
+        display: block;
+    }
+
+    .open-nav, .close-nav {
+        height: 15px;
+        width: 20px;
+        align-self: center;
+    }
+
+    .close-nav {
+        display: none;
+    }
+
+    .header-content {
+        max-width: 200px;
+        margin: 80px 0;
+    }
+
+    .header-content p {
+        font-size: 1.5em;
+        padding: 18px;
+    }
+
+    .aside-text {
+        position: relative;
+        padding: 10px;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+    }
+
+    .main-head {
+        justify-content: center;
+    }
+
+
+
+    .desktop-btn {
+        display: none;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(92px, auto);
+    }
+
+    .deep-earth {
+        background: url(../images/mobile/image-deep-earth.jpg) no-repeat;
+    
+    }
+    
+    .night-arcade {
+        background: url(../images/mobile/image-night-arcade.jpg) no-repeat;
+    }
+    
+    .soccer-team {
+        background: url(../images/mobile/image-soccer-team.jpg) no-repeat;
+    }
+    
+    .grid {
+        background: url(../images/mobile/image-grid.jpg) no-repeat;
+    }
+    
+    .from-above {
+        background: url(../images/mobile/image-from-above.jpg) no-repeat;
+    }
+    
+    .pocket-borealis {
+        background: url(../images/mobile/image-pocket-borealis.jpg) no-repeat;
+    }
+    
+    .curiosity {
+        background: url(../images/mobile/image-curiosity.jpg) no-repeat;
+    }
+    
+    .fisheye {
+        background: url(../images/mobile/image-fisheye.jpg) no-repeat;
+    }
+
+    .gallery div {
+       background-size: cover;
+    }
+
+    .gallery div p {
+        top: 35%;
+        left: 10%;
+        font-size: 1.2em;
+        max-width: 126px;
+    }
+
+    .mobile-btn {
+        display: block;
+        margin-top: 30px;
+        position: relative;
+        left: 27%;
+    }
+
+    footer,
+    .footer-nav, 
+    .footer-1,
+    .footer-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-2, .footer-1 {
+        text-align: center;
+    }
+
+    .footer-nav li a {
+        margin: 0;
+    }
+
+    .footer-nav li {
+        margin-bottom: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
